@@ -1,1 +1,3 @@
 I developed a credit card using the ERC-721 NFT specification with additional features so it is comparable to the ERC-6551 specification. Abstractly, it implements a credit system using tokens staked by the user, and a typical CeFi like credit system. I deployed the smart contract to moonbeam, and uses the Polkadot Asset hub to utilize Circle's USDC stablecoin. The system allows users to stake and mint their own NFT credit cards with a credit limit that increases programmatically as the user makes payments on time. The dApp that allows users to interact with the entire polkadot ecosystem using their NFT credit card.
+
+link to demo video: https://youtu.be/yTU8DO1pWFU
