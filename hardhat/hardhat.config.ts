@@ -12,8 +12,9 @@ const config: HardhatUserConfig = {
     },
   },
   networks: {
-    hardhat: {
-      chainId: 31337,
+    moonbeam: {
+      url: "https://moonbeam.public.blastapi.io",
+      chainId: 1284,
     },
   },
 };

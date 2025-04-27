@@ -8,8 +8,8 @@ import "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol";
 contract CreditNFT is ERC721, Ownable {
     uint256 private _nextTokenId = 1;
 
-    IERC20Metadata public stableToken; // ERC-20 token (e.g., USDC) used for staking & repayments
-
+    IERC20Metadata public stableToken;
+    
     struct CreditData {
         address owner;
         uint256 creditLimit;    // max draw per cycle

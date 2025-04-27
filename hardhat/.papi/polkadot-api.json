@@ -1,0 +1,16 @@
+{
+  "version": 0,
+  "descriptorPath": ".papi/descriptors",
+  "entries": {
+    "bridge": {
+      "chain": "polkadot_bridge_hub",
+      "metadata": ".papi/metadata/bridge.scale",
+      "genesis": "0xdcf691b5a3fbe24adc99ddc959c0561b973e329b1aef4c4b22e7bb2ddecb4464"
+    },
+    "asset": {
+      "chain": "polkadot_asset_hub",
+      "metadata": ".papi/metadata/asset.scale",
+      "genesis": "0x68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f"
+    }
+  }
+}

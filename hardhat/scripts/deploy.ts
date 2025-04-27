@@ -4,15 +4,11 @@ async function main() {
   const [deployer] = await ethers.getSigners();
   console.log("Deploying contracts with account:", deployer.address);
 
-  // Deploy MockUSDC first
-  const MockUSDC = await ethers.getContractFactory("MockUSDC");
-  const mockUSDC = await MockUSDC.deploy(ethers.parseUnits("1000000", 6)); // 1M USDC
-  await mockUSDC.waitForDeployment();
-  console.log("MockUSDC deployed at:", await mockUSDC.getAddress());
-
   // Deploy CreditNFT
   const CreditNFT = await ethers.getContractFactory("CreditNFT");
-  const creditNFT = await CreditNFT.deploy(await mockUSDC.getAddress());
+  const creditNFT = await CreditNFT.deploy(
+    "0xFFfffffF7D2B0B761Af01Ca8e25242976ac0aD7D"
+  );
   await creditNFT.waitForDeployment();
   console.log("CreditNFT deployed at:", await creditNFT.getAddress());
 }
